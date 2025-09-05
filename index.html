@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC 단어 마스터</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <header>
+            <div class="header-wrapper ">
+                 <h1>TOEIC 단어 마스터</h1> 
+                 <p>토익 고득점을 위한 필수 영단어</p>
+            </div>
+    </header>
+
+    <!--오늘의 단어-->
+   <div class="card">
+      <div class="today-title">오늘의 단어</div>
+      <div class="today-word">
+        <h2 id="word"></h2>
+        <p id="pronunciation"></p>
+      </div>
+      <div class="info-box">
+        <p><strong>의미:</strong> <span id="meaning"></span></p>
+      </div>
+      <div class="info-box">
+        <p><strong>예문:</strong> "<span id="example"></span>"</p>
+      </div>
+     
+    </div>
+
+     <div style="text-align:center;">
+        <button class="btn" onclick="startStudy()">▶ 학습 시작하기</button>
+      </div>
+
+   <!-- 카테고리별 학습 -->
+<div class="card">
+  <h3>카테고리별 학습</h3>
+  <div class="categories">
+    <div class="category" data-cat="형용사"><p>형용사</p></div>
+    <div class="category" data-cat="동사"><p>동사</p></div>
+    <div class="category" data-cat="부사"><p>부사</p></div>
+    <div class="category" data-cat="전치사"><p>전치사</p></div>
+  </div>
+</div>
+
+<!-- 클릭 시 목록이 여기 렌더됨 -->
+<div id="listContainer"></div>
+
+   <!-- 빠른 액션 -->
+    <div class="quick-actions">
+      <div class="quick-card">
+        <p><strong>단어 테스트</strong></p>
+        <p>실력을 확인해보세요</p>
+      </div>
+      <div class="quick-card">
+        <p><strong>복습하기</strong></p>
+        <p>틀린 문제를 다시 풀어보세요</p>
+      </div>
+      <div class="quick-card">
+        <p><strong>랜덤 학습</strong></p>
+        <p>무작위 단어 학습</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      매일 꾸준한 학습으로 토익 고득점을 달성하세요! 
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
